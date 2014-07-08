@@ -10,7 +10,7 @@
         "tg-fis",
         "fis"
     ],
-    "author": "hex <greedisgood5000@163.com>",
+    "author": "hex<greedisgood5000@163.com>",
     "scripts": {"install": "cd ../../ && node node_modules\\tfi\\init"},
     "preferGlobal " : true,
     "dependencies": {
