@@ -2,6 +2,7 @@ var bower = require('bower');
 var fis = require('fis');
 var _ = fis.util;
 var pkgJSON = _.readJSON('./package.json');
+console.log(pkgJSON)
 var tfiAddr = __dirname + '\\..\\.bin\\tfi';
 _.write('./.tfi/conf.js', '');
 _.write('./.tfi/release.bat', [
