@@ -1,0 +1,22 @@
+{
+    "name": "tfi",
+    "version": "0.0.1",
+    "description": "a simple front-end dev tool",
+    "main": "main.js",
+    "bin" : {
+        "spt" : "bin/spt"
+    },
+    "keywords": [
+        "tg-fis",
+        "fis"
+    ],
+    "author": "hex <greedisgood5000@163.com>",
+    "scripts": {"init": "node init"},
+    "preferGlobal " : true,
+    "dependencies": {
+        "bower": "*",
+        "fis": "*",
+        "when": "3.x"
+    },
+    "license": "MIT"
+}
