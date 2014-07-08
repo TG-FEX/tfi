@@ -4,7 +4,7 @@
     "description": "a simple front-end dev tool",
     "main": "main.js",
     "bin" : {
-        "spt" : "bin/spt"
+        "tfi" : "bin/tfi"
     },
     "keywords": [
         "tg-fis",
