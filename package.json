@@ -1,6 +1,6 @@
 {
     "name": "tfi",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "a simple front-end dev tool",
     "main": "main.js",
     "bin" : {
@@ -11,7 +11,7 @@
         "fis"
     ],
     "author": "hex <greedisgood5000@163.com>",
-    "scripts": {"init": "node init"},
+    "scripts": {"install": "node init"},
     "preferGlobal " : true,
     "dependencies": {
         "bower": "*",

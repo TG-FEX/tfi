@@ -2,8 +2,13 @@ var bower = require('bower');
 var fis = require('fis');
 var _ = fis.util;
 var pkgJSON = _.readJSON('./package.json');
-_.mkdir('./.fis');
-_.write('./.fis/release.bat', 'cd /d %~dp0/../\n' + __dirname + '\\node_modules\\.bin\\fis.cmd' + ' release -c -f .fis\\conf.js');
+var tfiAddr = __dirname + '\\..\\.bin\\tfi';
+_.write('./.tfi/conf.js', '');
+_.write('./.tfi/release.bat', [
+    'cd /d %~dp0/../\n',
+    tfiAddr + ' release -c -f .tfi\\conf.js',
+    tfiAddr + ' server open'
+].join('\n'));
 if (pkgJSON && pkgJSON.bower) {
     _.write('./bower.json', JSON.stringify(pkgJSON.bower));
     bower.commands.install().on('log', function(data){
