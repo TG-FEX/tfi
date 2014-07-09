@@ -1,6 +1,6 @@
 {
     "name": "tfi",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "a simple front-end dev tool",
     "main": "main.js",
     "bin" : {
@@ -15,8 +15,7 @@
     "preferGlobal " : true,
     "dependencies": {
         "bower": "*",
-        "fis": "*",
-        "when": "3.x"
+        "fis": "*"
     },
     "license": "MIT"
 }

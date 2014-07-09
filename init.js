@@ -2,14 +2,13 @@ var bower = require('bower');
 var fis = require('fis');
 var _ = fis.util;
 var pkgJSON = _.readJSON('./package.json');
-console.log(pkgJSON)
 var tfiAddr = __dirname + '\\..\\.bin\\tfi';
-_.write('./.tfi/conf.js', '');
 _.write('./.tfi/release.bat', [
     'cd /d %~dp0/../\n',
-    tfiAddr + ' release -c -f .tfi\\conf.js',
-    tfiAddr + ' server open'
+        tfiAddr + ' release -c -f .tfi\\conf.js',
+        tfiAddr + ' server open'
 ].join('\n'));
+_.copy(__dirname + '/conf-default.js', './.tfi/conf.js');
 if (pkgJSON && pkgJSON.bower) {
     _.write('./bower.json', JSON.stringify(pkgJSON.bower));
     bower.commands.install().on('log', function(data){
